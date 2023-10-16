@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание профиля</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+            <div class = "header">
+                <img src="img/logo.png" alt="logo">
+                <button class="button" ><img src="img/secondary.png" alt="Выйти из аккаунта"></button>
+            </div>
+    </header>
+    <div class="block">
+        <div class="top">
+            <button class="button" onclick="window.location.href = '#';"><img src="img/button_tomain.png" alt="На главную"></button>
+            <div class="page-name">
+                <h3>Создание профиля</h3>
+                <div class="about">
+                    <p>/о себе</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <section>
+                <div class="photo">
+                    <div class="photo_content">
+                        <div class="download">
+                            <p>Аватар профиля</p>
+                            <button class="button" ><img src="img/XS.png" alt="Загрузить"></button>
+                        </div>
+                        <p>Загрузите фотографию весом не более 10 мб</p>
+                    </div>
+                </div>
+                <div class="information">
+                    <form class="form">
+                        <label for="name">Имя и фамилия</label>
+                        <input name="name" id="name" type="text">
+                        <div class="sex_choice">
+                            <label class="sex"> <input type="radio">Парень</label>
+                            <label class="sex"> <input type="radio">Девушка</label>
+                        </div>
+                        <label for="start">Дата рождения:</label>
+                        <input type="date" id="start" name="Дата рождения"/>
+                        <input type="text" placeholder="Телеграм">  
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" id="phone" type="text">
+                        <label for="inf">О себе</label>
+                        <textarea name="inf" id="inf" cols="30" rows="10"></textarea>
+                        <label for="inf">Например: Редко готовлю, но люблю ботать на кухне по ночам. Хочу завести собаку. Очень люблю читать, играть в хорроры и смотреть аниме. Открыт к общению и взаимопомощи :)</label>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="pag"><p>Так будет выглядеть твоя будущая страница</p></div>
+                <div class="view_page"></div>
+                <div class="smth">
+                    <div class="new_inf">Мы совсем ничего про тебя не знаем</div>
+                    <div class="tell"> 
+                        <label for="t" ></label>
+                        <textarea name="t" id="inf" cols="50" rows="10">Расскажи о себе. Люди пишут тем, кому доверяют. Тем более при поиске соседа</textarea>
+                        
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <div class="fn">
+            <button class="button" onclick="window.location.href = 'index2.html';"><img src="img/primary.png" alt="Продолжить"></button>
+        </div>
+        <div class="end">
+            <div class="connection">
+                <div class="mail">Support@homeet.com</div>
+                <div class="describe"> Техническая поддержка</div>
+            </div>
+            <div class="cont">
+                <div class="text">
+                    <p>О сервисе</p>
+                    <p>Контакты</p>
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div class="icons">
+                    <button class="button"><img src="img/tg.png" alt="tg"></button>
+                    <button class="button"><img src="img/vk.png" alt="vk"></button>
+                </div>
+            </div>
+            <img src="img/Line 4.png" alt="">
+            <div class="endend">
+                <p>Предложение не является публичной офертой. 
+Сервис не несет ответственности за действия пользователей, достоверность информации и т.д.</p>
+                <p>Сделано в бвср</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
