@@ -11,12 +11,12 @@
     <header class="header">
             <div class = "header">
                 <img src="img/logo.png" alt="logo">
-                <button class="button" ><img src="img/secondary.png" alt="Выйти из аккаунта"></button>
+                <button class="button_header" >Выйти из аккаунта</button>
             </div>
     </header>
     <div class="block">
         <div class="top">
-            <button class="button" onclick="window.location.href = 'index.html';"><img src="img/back.png" alt="Назад"></button>
+            <button class="button_back" onclick="window.location.href = 'index.html';">Назад</button>
             <div class="page-name">
                 <h3>Создание профиля</h3>
                 <div class="about">
@@ -35,15 +35,25 @@
                         </div>
                         <label for="Course">Курс</label>
                         <input name="Course" id="Course" type="text" >
-                        <label for="Stup">Ступень образования</label>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Ступень образования</button>
+                            <ul id="myDropdown" class="dropdown-content">
+                                <li>Бакалавриат</li>
+                                <li>Магистратура</li>
+                                <li>Аспирантура</li>
+                                <li>Сотрудник</li>
+                            </ul>
+                        </div>
+                        <!-- <label for="Stup">Ступень образования</label>
                         <input name="Stup" id="Stup" type="text" placeholder="Ступень образования">
-
+ -->
                         <label for="facultet">Факультет</label>
                         <input name="facultet" id="facultet" type="text" placeholder="Факультет">
                         <label for="ObProg">Образовательная программа</label>
                         <input name="ObProg" id="ObProg" type="text" placeholder="Образовательная программа">
                         <input type="text" placeholder="Работа">
                     </form>
+                    <script src="js/script2.js"></script>
                 </div>
             </section>
             <section>
@@ -60,7 +70,7 @@
             
         </div>
         <div class="fn">
-            <button class="button" ><img src="img/primary.png" alt="Продолжить"></button>
+            <button class="button_next" >Продолжить</button>
         </div>
         <div class="end">
             <div class="connection">

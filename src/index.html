@@ -11,12 +11,12 @@
     <header class="header">
             <div class = "header">
                 <img src="img/logo.png" alt="logo">
-                <button class="button" ><img src="img/secondary.png" alt="Выйти из аккаунта"></button>
+                <button class="button_header" >Выйти из аккаунта</button>
             </div>
     </header>
     <div class="block">
         <div class="top">
-            <button class="button" onclick="window.location.href = '#';"><img src="img/button_tomain.png" alt="На главную"></button>
+            <button class="button_top" onclick="window.location.href = '#';">На главную</button>
             <div class="page-name">
                 <h3>Создание профиля</h3>
                 <div class="about">
@@ -30,38 +30,68 @@
                     <div class="photo_content">
                         <div class="download">
                             <p>Аватар профиля</p>
-                            <button class="button" ><img src="img/XS.png" alt="Загрузить"></button>
+                            <button class="button_download" >Загрузить</button>
                         </div>
                         <p>Загрузите фотографию весом не более 10 мб</p>
                     </div>
                 </div>
                 <div class="information">
+                    
                     <form class="form">
-                        <label for="name">Имя и фамилия</label>
-                        <input name="name" id="name" type="text">
+                        
+                        <div class="form_input">
+                            <label for="name">
+                                <span>Имя и фамилия</span>
+                                <input name="name" id="namexx" type="text" required/>
+                                <span class="error hidden">Введите имя русскими буквами</span>
+                            </label>
+                        </div>
                         <div class="sex_choice">
                             <label class="sex"> <input type="radio">Парень</label>
                             <label class="sex"> <input type="radio">Девушка</label>
                         </div>
-                        <label for="start">Дата рождения:</label>
-                        <input type="date" id="start" name="Дата рождения"/>
-                        <input type="text" placeholder="Телеграм">  
-                        <label for="phone">Номер телефона</label>
-                        <input type="tel" id="phone" type="text">
+                        <label for="birth">Дата рождения:</label>
+                        <input type="date" id="birth" name="Дата рождения" required/>
+                        <label for="telegram">
+                            <input name="telegram" id="telegram" type="text" placeholder="Телеграм" required>
+                            <span class="error hidden">Введите символ @ и английские буквы</span>
+                          </label>  
+
+                        <label for="phone">
+                            <span>Номер телефона</span>
+                            <input type="tel" id="phone" required>
+                            <span class="error hidden">Введите номер телефона</span>
+                        </label>
+                        
                         <label for="inf">О себе</label>
-                        <textarea name="inf" id="inf" cols="30" rows="10"></textarea>
+                        <textarea name="inf" id="inf" cols="40" rows="10"></textarea>
                         <label for="inf">Например: Редко готовлю, но люблю ботать на кухне по ночам. Хочу завести собаку. Очень люблю читать, играть в хорроры и смотреть аниме. Открыт к общению и взаимопомощи :)</label>
                     </form>
+                    <script src="js/script.js"></script>
                 </div>
             </section>
             <section>
+
                 <div class="pag"><p>Так будет выглядеть твоя будущая страница</p></div>
-                <div class="view_page"></div>
+                <div class="view_page">
+                    <div class="left">
+                        <div class="photo_selected"></div>
+                        <button class="button_show">Показать контакты</button>
+                    </div>
+                    <div class="inform">
+                        <div class="name_show" id="name_show"></div>
+                        <div class="inf_below">
+                            <div class="sex_show" id="sex_show"></div>
+                            <div class="birth_show" id="birth_show"></div>
+                        </div>
+                        <div class="about_show" id="about_show"></div>
+                    </div>
+                </div>
                 <div class="smth">
                     <div class="new_inf">Мы совсем ничего про тебя не знаем</div>
                     <div class="tell"> 
                         <label for="t" ></label>
-                        <textarea name="t" id="inf" cols="50" rows="10">Расскажи о себе. Люди пишут тем, кому доверяют. Тем более при поиске соседа</textarea>
+                        <textarea name="t" id="inf" cols="80" rows="10">Расскажи о себе. Люди пишут тем, кому доверяют. Тем более при поиске соседа</textarea>
                         
                     </div>
                 </div>
@@ -69,7 +99,7 @@
             
         </div>
         <div class="fn">
-            <button class="button" onclick="window.location.href = 'index2.html';"><img src="img/primary.png" alt="Продолжить"></button>
+            <button class="button_next" onclick="window.location.href = 'index2.html';">Продолжить</button>
         </div>
         <div class="end">
             <div class="connection">
